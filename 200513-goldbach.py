@@ -1,16 +1,19 @@
 # 소수 구하는 함수  
 def prime(a):
-    i = 2
-    while i < a/2:
-        if a % i == 0:
-            return False
-        elif a == 2:
-            return True
-        elif a == 3:
-            return True
-        else:
-            i = i + 1
-    return True
+    if a == 1:
+        return False
+    if a == 2:
+        return True
+    if a == 3: 
+        return True
+    if a > 3:
+        i = 2
+        while i <= a/2:
+            if a % i == 0:
+                return False
+            else:
+                i = i + 1
+        return True
 
 # 정수 입력, 순서쌍 구하기
 N = int(input())
