@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>tab menu test</title>
+    
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'tab1')">생필품 관리</button>
+            <p></p>
+            <button class="tablinks" onclick="openTab(event, 'tab2')">가사노동 관리</button>
+            <button class="tablinks" onclick="openTab(event, 'tab3')">타임라인</button>
+            <button class="tablinks" onclick="openTab(event, 'tab4')">통계</button>
+            
+        </div>
+          
+        <div id="tab1" class="tabcontent" style="display: block;"> 당신의 생필품 </div>
+        <div id="tab2" class="tabcontent" style="display: none;"> 당신의 가사노동 </div>
+        <div id="tab3" class="tabcontent" style="display: none;"> 당신의 타임라인 </div>
+        <div id="tab4" class="tabcontent" style="display: none;"> 당신의 통계 </div>
+       
+
+        <script src="tab.js"></script>
+
+    </body>
+</html>
